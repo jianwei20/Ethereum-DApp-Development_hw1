@@ -2,9 +2,11 @@
 
 ### (20%) 1. Please compare hash function and cryptographic hash function and give an example.
 ## Answer
-> ### hash function 是什麼？
-> 一種從任何一種資料中建立小的數字「指紋」的方法。**雜湊函式** 把訊息或資料 (key) 壓縮成摘要，使得資料量變小，將資料的格式固定下來。該函式將資料打亂 > 混合，重新建立一個叫做 **雜湊值（hash values，hash codes，hash sums，或hashes）** 的指紋。這個雜湊值就當作是陣列的索引，資料就儲存在這個索引.
-> 的位置中。雜湊值通常用一個短的隨機字母和數字組成的字串來代表。
+### hash function 是什麼？
+一種從任何一種資料中建立小的數字「指紋」的方法。
+**雜湊函式** 把訊息或資料 (key) 壓縮成摘要，使得資料量變小，將資料的格式固定下來。該函式將資料打亂 混合，重新建立一個叫做 **雜湊值（hash values，hash codes，hash sums，或hashes）** 的指紋。
+這個雜湊值就當作是陣列的索引，資料就儲存在這個索引，資料就儲存在這個索引的位置中。
+雜湊值通常用一個短的隨機字母和數字組成的字串來代表。
 
 ### hash function 性質
 1. 運算速度快
