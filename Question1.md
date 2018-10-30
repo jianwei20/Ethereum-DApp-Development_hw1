@@ -50,6 +50,11 @@ hash table 理想應用是把每個key對映到唯一的index上（也就是完�
 ![](https://upload.wikimedia.org/wikipedia/commons/6/66/Digital_Signature_diagram_zh-CN.svg)
 
 
+### Reference
+- Hash function[Wiki](https://zh.wikipedia.org/wiki/散列函數) 
+
+- Cryptographic hash function [WiKi](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+
 
 
 
