@@ -44,8 +44,10 @@ hash table 理想應用是把每個key對映到唯一的index上（也就是完�
 
 ### 範例 **Digital Signature**
 是一種類似寫在紙上的普通的物理簽名，但是使用了公鑰加密領域的技術實現，用於鑑別數位信息的方法。一套數位簽章通常定義兩種互補的運算，一個用於簽名，另一個用於驗證，但法條中的電子簽章與數位簽章，代表之意義並不相同，電子簽章用以辨識及確認電子文件簽署人身分、資格及電子文件真偽者。而數位簽章則是以數學演算法或其他方式運算對其加密，才形成的電子簽章，意即並非所有的電子簽章都是數位簽章。
-如下圖 說明數位簽章的簽名及驗證過程
-![](https://zh.wikipedia.org/wiki/數位簽章#/media/File:Digital_Signature_diagram_zh-CN.svg)
+
+
+下圖 說明數位簽章的簽名及驗證過程
+![](https://upload.wikimedia.org/wikipedia/commons/6/66/Digital_Signature_diagram_zh-CN.svg)
 
 
 
