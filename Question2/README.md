@@ -36,3 +36,11 @@ pubKey: 9d163f25cbc4f43eb491ffb9ee117ed8b3e1e068ead004d5cc8612f1171d9e9b791f5759
  ```
 
  #### (30%) c. There is a file called Keystore that is used to encrypt the private key and save in a JSON file. Can you generate a Keystore with the password "nccu"? You can find the details about Keystore below.
+ ```
+  $ node 2.c.js
+ ```
+ 
+ ```javascript
+{"version":3,"id":"c7bc9a56-4589-402d-bdb8-c93b75a6d058","address":"0342d5ecc6b9536f7207a7559c422ea12a379279","crypto":{"ciphertext":"92d5cc9a5958cfc6bfbc82417549df9796c8db00c70676bb85b6c6fe58580ecb","cipherparams":{"iv":"9aa5d72828c6995be6100154d1282f89"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"64f02692e7f871b2dbbad70a56bced805a54ea1d594da6e0a8a8c3228f7dbfd9","n":262144,"r":8,"p":1},"mac":"ee833b752f7beacb2c8634a35e518836ca0a1e37aa13ac62c4a0def909ea4da9"}}
+ ```
+ 
