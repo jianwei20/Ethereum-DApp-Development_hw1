@@ -37,6 +37,6 @@ d是私鑰，m是消息，我們一般會對消息的HASH進行簽名，因此�
 
 
 Reference
-- []("https://medium.com/taipei-ethereum-meetup/虛擬貨幣錢包-從-bip32-bip39-bip44-到-ethereum-hd-ｗallet-a40b1c87c1f7")
+- [](https://medium.com/taipei-ethereum-meetup/虛擬貨幣錢包-從-bip32-bip39-bip44-到-ethereum-hd-ｗallet-a40b1c87c1f7)
 
-- []("")
+- [](http://www.wanbizu.com/baike/201412083991.html)
