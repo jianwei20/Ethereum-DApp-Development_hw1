@@ -3,7 +3,7 @@
 BIP 全名是 Bitcoin Improvement Proposals，是提出 Bitcoin 的新功能或改進措施的文件。可由任何人提出，經過審核後公佈在 bitcoin/bips 上。BIP 和 Bitcoin 的關係，就像是 RFC 之於 Internet。
 而其中的 BIP32, BIP39, BIP44 共同定義了目前被廣泛使用的 HD Wallet，包含其設計動機和理念、實作方式、實例等。
 ```
-BIP32：定義 Hierarchical Deterministic wallet (簡稱 “HD Wallet”)，是一個系統可以從單一個 seed 產生一樹狀結構儲存多組 keypairs（私鑰和公鑰）。好處是可以方便的備份、轉移到其他相容裝置（因為都只需要 seed），以及分層的權限控制等。
+BIP32：定義 Hierarchical Deterministic wallet (簡稱 “HD Wallet”)，是一個系統可以從單一個 seed 產生一樹狀結構儲存多組 keypairs（私鑰和公鑰）。好處是可以方便的備份、轉移到其他相容裝置（因為都只需要 seed），以方法及分層的權限控制等。
 ```
 ```
 BIP39：將 seed 用方便記憶和書寫的單字表示。一般由 12 個單字組成，稱為 mnemonic code(phrase)，中文稱為助記詞或助記碼
@@ -31,5 +31,12 @@ d是私鑰，m是消息，我們一般會對消息的HASH進行簽名，因此�
 
 如果僅僅是針對比特幣而言，這個公式已經很好了，但考慮到RFC6979面向的是密碼學(不僅僅是比特幣)的統一規範，要考慮更多的複雜情況(更多曲線、更多參數、更多算法等)，因此，實際上的RFC6979要比上述公式複雜得多，代碼實現起來也要多得多。
 
-要用私鑰來保證**保密**，要用消息來保證**唯一**，再使用確定的、不可逆的方法來進行運算，最終計算出來的k值就是安全的。
+要用私鑰來保證**保密**，要用消息來保證**唯一**，再使用確定的、不可逆的來進行運算，最終計算出來的k值就是安全的。
 通過使用RFC6979，我們就可以有效降低比特幣簽名對於隨機數品質的要求
+
+
+
+Reference
+- []("https://medium.com/taipei-ethereum-meetup/虛擬貨幣錢包-從-bip32-bip39-bip44-到-ethereum-hd-ｗallet-a40b1c87c1f7")
+
+- []("")
