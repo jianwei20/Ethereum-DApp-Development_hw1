@@ -1,5 +1,21 @@
 ### What is HD Wallet, BIP32, BIP39 and BIP44? (+2%)
 
+BIP 全名是 Bitcoin Improvement Proposals，是提出 Bitcoin 的新功能或改進措施的文件。可由任何人提出，經過審核後公佈在 bitcoin/bips 上。BIP 和 Bitcoin 的關係，就像是 RFC 之於 Internet。
+而其中的 BIP32, BIP39, BIP44 共同定義了目前被廣泛使用的 HD Wallet，包含其設計動機和理念、實作方式、實例等。
+```
+BIP32：定義 Hierarchical Deterministic wallet (簡稱 “HD Wallet”)，是一個系統可以從單一個 seed 產生一樹狀結構儲存多組 keypairs（私鑰和公鑰）。好處是可以方便的備份、轉移到其他相容裝置（因為都只需要 seed），以及分層的權限控制等。
+```
+```
+BIP39：將 seed 用方便記憶和書寫的單字表示。一般由 12 個單字組成，稱為 mnemonic code(phrase)，中文稱為助記詞或助記碼
+```
+```
+基於 BIP44 的系統，賦予樹狀結構中的各層特殊的意義。讓同一個 seed 可以支援多幣種、多帳戶等。
+```
+Ethereum HD Wallet
+Ethereum 的錢包目前均採用以上 Bitcoin HD Wallet 的架構，並訂 coin_type' 為 60'，可以在 ethereum/EIPs/issues 中看到相關的討論。舉例來說，在一個 Ethereum HD Wallet 中，第一個帳戶（這裡的帳戶指 BIP44 中定義的 account'）的第一組 keypair，其路徑會是 m/44'/60'/0'/0/0。
+
+
+
 ### What is RFC 6979 for? (+2%)
 k值對於比特幣是非常重要(不僅僅是比特幣，對於整個橢圓曲線家族來說都是如此)
 暴漏k值(簽名)相當於暴漏私鑰，因此：
