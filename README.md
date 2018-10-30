@@ -1,8 +1,6 @@
 # Homework 1
 
 ## 作業繳交
-
-:::danger
 :warning: 注意
 - Deadline: 10/30 (before 11:59pm)
 - How to submit? Register an account on  https://github.com/ and push your code and the answer there. For question 2, please attach your source code.
