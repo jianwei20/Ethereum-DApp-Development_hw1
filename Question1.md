@@ -17,8 +17,17 @@
 * **衝突 (collision)**
 也就是 **第 2 種情況** 發生時就稱為「雜湊衝突」。好的雜湊函式在輸入域中很少出現雜湊衝突。在雜湊表和資料處理中，不抑制衝突來區別資料，會使得資料庫記錄更難找到。
 
-* **hash distribution**
-好的 hash function 所產生的 hash 值應盡可能均勻分佈
-[hash distribution 系列實驗](http://softwareengineering.stackexchange.com/questions/49550/which-hashing-algorithm-is-best-for-uniqueness-and-speed)
-![](https://i.imgur.com/wVTncXa.png)
+### 範例 **hash table**
+
+雜湊表是雜湊函式的一個主要應用，使用雜湊表 **能夠快速的按照關鍵字 (雜湊值) 尋找資料記錄**。
+
+雜湊表雜湊函式的幾乎不可能/不切實際的理想是把每個關鍵字對映到唯一的索引上（也就是完全零碰撞），因為這樣能夠保證直接存取表中的每一個資料。
+
+一個好的雜湊函式（包括大多數加密雜湊函式）具有 **均勻** 的真正隨機輸出。同樣重要的是，隨機雜湊函式不太會出現非常高的衝突率。但是，少量的可以估計的衝突在實際狀況下是不可避免的。
+
+可以用 **陣列** 、 **tree** 或者是 **linked list** 建表。使用 linked list 遇到碰撞時就接在同一個索引後面即可，如下圖。
+![](https://i.imgur.com/D85eZMz.png)
+
+**效能不佳的雜湊函式表意味著尋找操作會退化為費時的線性搜尋。**
+
 
